@@ -1,0 +1,23 @@
+{
+  "name": "to-do-list2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgataHerbst/to-do-list2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgataHerbst/to-do-list2/issues"
+  },
+  "homepage": "https://github.com/AgataHerbst/to-do-list2#readme"
+}
