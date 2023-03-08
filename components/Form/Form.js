@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { useCallback } from 'react';
 import s from './Form.module.css';
 
 function Form({ todo, setTodo }) {
     const [value, setValue] = useState('')
     //console.log(value)
-    const saveTodo = useCallback (() => {
+    function saveTodo () {
         setTodo(
             [...todo, {
                 id: Math.random(),
@@ -14,7 +13,7 @@ function Form({ todo, setTodo }) {
             }]
         )
         setValue('')
-    }, [setValue])
+    }
 
     return <>
         <div className={s.form}>
