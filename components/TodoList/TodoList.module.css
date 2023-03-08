@@ -1,0 +1,9 @@
+.todo {
+  display: flex;
+  font-weight: bolder;
+  color: rgb(0, 153, 255);
+}
+
+.fieldset {
+  border: 2px solid rgb(0, 153, 255);
+}

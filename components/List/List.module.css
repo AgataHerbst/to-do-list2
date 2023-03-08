@@ -1,0 +1,48 @@
+.listbtn {
+  display: flex;
+  flex-direction: column;
+  width: 830px;
+  color: rgb(0, 153, 255);
+  font-weight: bolder;
+}
+
+.fieldset {
+  border: 2px solid rgb(0, 153, 255);
+}
+
+.btn {
+  margin-left: 15px;
+  border-color: rgb(0, 153, 255);
+  color: white;
+  background-color: rgb(0, 153, 255);
+  height: 25px;
+  font-weight: bolder;
+}
+
+.delete {
+  margin-left: 15px;
+  border-color: rgb(0, 153, 255);
+  color: white;
+  background-color: rgb(0, 153, 255);
+  height: 25px;
+  font-weight: bolder;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 700px;
+  margin: 24px;
+  padding: 8px;
+}
+
+.list:hover {
+  background: rgb(180, 201, 214);
+  border-radius: 5px;
+}
+
+.close {
+  color: grey;
+  text-decoration: line-through;
+}
