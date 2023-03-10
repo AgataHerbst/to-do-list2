@@ -7,17 +7,17 @@ function App () {
 const [todo, setTodo] = useState([
         {
             id: 1,
-            title: '',
+            title: 'первая задача',
             status: true
         },
         {
             id: 2,
-            title: '',
+            title: 'вторая задача',
             status: true
         },
         {
             id: 3,
-            title: '',
+            title: 'третья задача',
             status: false
         }
     ])

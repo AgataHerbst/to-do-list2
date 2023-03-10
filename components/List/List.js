@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import s from './List.module.css'
-import { useCallback } from 'react';
+
 
 function List({ todo, setTodo }) {
 
@@ -23,14 +23,14 @@ function List({ todo, setTodo }) {
         setTodo(newList)
     }, [setTodo])
 
-   function editTodo (id, title) { //функция редактирования
+  const editTodo = useCallback ((id, title) => { //функция редактирования
         setEdit(id)
         setValue(title)
-    }
+    }, [setEdit, setValue])
 
     //console.count (1)
      
-     function saveTodo (id) {  //функция добавить
+    const saveTodo = useCallback ((id) => {  //функция добавить
         const newList = [...todo].map(item => {
             if (item.id == id) {
                 item.title = value
@@ -40,7 +40,7 @@ function List({ todo, setTodo }) {
         })
         setTodo(newList)
         setEdit(null) //режим просмотра
-    }
+    }, [setTodo, setEdit])
 
     return <>
         <div className={s.listbtn}>
